@@ -1,6 +1,8 @@
 import React from 'react';
 import './Track.css';
 
+
+//Creates the track component and sets state
 class Track extends React.Component {
   constructor(props) {
     super(props);
@@ -9,6 +11,7 @@ class Track extends React.Component {
     this.removeTrack = this.removeTrack.bind(this);
   }
 
+  //Provides a + and - symbol for removing or adding tracks
   renderAction() {
     if (this.props.isRemoval) {
       return (
@@ -20,14 +23,17 @@ class Track extends React.Component {
     }
   }
 
+  //Adds a track to the tracklist
   addTrack() {
     this.props.onAdd(this.props.track);
   }
 
+  //Removes a track from the tracklist
   removeTrack() {
     this.props.onRemove(this.props.track);
   }
 
+  //Renders the track component to the tracklist
   render() {
     return (
       <div className="Track">

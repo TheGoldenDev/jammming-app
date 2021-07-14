@@ -10,6 +10,7 @@ class SearchBar extends React.Component {
     this.handleKeyPress = this.handleKeyPress.bind(this);
 
   }
+  
   search(term) {
     this.props.onSearch(this.state.term);
   }

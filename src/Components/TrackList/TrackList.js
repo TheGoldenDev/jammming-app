@@ -1,7 +1,9 @@
 import React from 'react';
-import './TrackList.css'
+import './TrackList.css';
 import Track from '../Track/Track.js';
 
+
+//Creates a tracklist component that displays the tracks
 class TrackList extends React.Component {
 
   render() {
